@@ -1,0 +1,35 @@
+#menu-bar{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 60px;
+    width: 100%;
+    background-color: beige;
+}
+
+.space{
+    flex: 1 1 auto;
+}
+
+.menu-item{
+    height: 100%;
+    margin-right: 7px;
+    margin-left: 2px;
+    font-size: 3vh;
+}
+
+.menu-img{
+    height: 70%;
+    margin-top: 8%;
+}
+
+.menu-item{
+    text-decoration: none;
+}
+.menu-item:hover{
+    font-weight: bold;
+}
