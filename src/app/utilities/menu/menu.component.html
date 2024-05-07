@@ -5,32 +5,17 @@
         </a>
     </div>
 
-    <div>
-        <a class="menu-item" routerLink="dashboard" style="font-weight: bold;">
-            Dashboard
-        </a>
-    </div>
-    <div>
-        <a class="menu-item" routerLink="">
-            Acounts
-        </a>
-    </div>
-    <div>
-        <a class="menu-item" routerLink="">
-            Records
-        </a>
-    </div>
-    <div>
-        <a class="menu-item" routerLink="">
-            Analytics
+    <div *ngFor="let item of menuItems ">
+        <a class="{{item.class}}" routerLink="{{item.link}}">
+            {{item.name}}
         </a>
     </div>
 
     <div class="space"></div>
 
     <div>
-        <a class="menu-item" routerLink="">
-            Log Out
+        <a class="menu-item" routerLink="/login">
+            Log In
         </a>
     </div>
 </div>

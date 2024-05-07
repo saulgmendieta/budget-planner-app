@@ -22,6 +22,10 @@
     font-size: 3vh;
 }
 
+.active-item{
+    font-weight: bold;
+}
+
 .menu-img{
     height: 70%;
     margin-top: 8%;

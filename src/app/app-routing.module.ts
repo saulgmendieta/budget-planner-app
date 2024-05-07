@@ -1,15 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { AuthRoutingModule } from './security/auth-routing.module';
+import { PagesRoutingModule } from './pages/pages-routing.module';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'dashboard', component: DashboardComponent},
+  {path: '', redirectTo:'/wallet', pathMatch:'full'},
+  {path: '**', component: NotFoundComponent},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),
+            AuthRoutingModule,
+            PagesRoutingModule
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
