@@ -12,6 +12,7 @@ import { RecordsComponent } from './pages/records/records.component';
 import { AnalyticsComponent } from './pages/analytics/analytics.component';
 import { PagesComponent } from './pages/pages/pages.component';
 import { LoginComponent } from './security/login/login.component';
+import { AccountComponent } from './accounts/account/account.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LoginComponent } from './security/login/login.component';
     RecordsComponent,
     AnalyticsComponent,
     PagesComponent,
-    LoginComponent
+    LoginComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,

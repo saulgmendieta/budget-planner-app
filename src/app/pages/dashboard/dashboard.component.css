@@ -1,0 +1,19 @@
+#accountsZone{
+    display: flex;
+    flex-direction: row;
+}
+
+.accountBox{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 200px;
+    border: 1px solid #dcdcdc;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 2px;
+}
+
+.accountBox:hover{
+    cursor: pointer;
+}

@@ -1,1 +1,8 @@
-<p>dashboard works!</p>
+<div id="accountsZone">
+    <div *ngFor="let account of accountList">
+        <div class="accountBox" [style.background-color]="account.color">
+            <div>{{account.name}}</div>
+            <div>{{account.currency}} {{account.balance}}</div>
+        </div>
+    </div>
+</div>
