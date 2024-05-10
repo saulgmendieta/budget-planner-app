@@ -1,1 +1,17 @@
-<p>accounts works!</p>
+<div id="container">
+    <div id="accounts-menu">
+        <h1 style="margin-left: 15px;">Accounts</h1>
+            
+    <div id="add-account-area">
+        <div id="add-account-btn"> Add Account</div>
+    </div>
+    </div>
+    <div id="acounts-zone">
+        <div class="account-container" *ngFor="let account of accountList">
+            <div class="dot" [style.background-color]="account.active_color"></div>
+            <div>{{account.name}}</div>
+            <div class="space"></div>
+            <div>{{account.balance}} {{account.currency}}</div>
+        </div>
+    </div>
+</div>

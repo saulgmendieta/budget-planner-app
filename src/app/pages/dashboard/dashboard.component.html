@@ -1,8 +1,11 @@
 <div id="accountsZone">
-    <div *ngFor="let account of accountList">
-        <div class="accountBox" [style.background-color]="account.color">
+    <div *ngFor="let account of accountList; let i=index">
+        <div class="accountBox" [style.background-color]="account.active_color" (click)="selectBox(i)">
             <div>{{account.name}}</div>
             <div>{{account.currency}} {{account.balance}}</div>
         </div>
     </div>
+</div>
+<div id="select-all-area" *ngIf="hasSelected">
+    <div id="select-all-btn" (click)="restoreBoxes()"> Select All Accounts</div>
 </div>

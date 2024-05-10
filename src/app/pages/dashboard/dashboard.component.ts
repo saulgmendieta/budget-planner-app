@@ -17,5 +17,24 @@ export class DashboardComponent implements OnInit {
 
   accountList = this.accountService.accountList;
 
+  selectBox(index: number){
+    var aList = this.accountList;
+    for(var i = 0; i<aList.length; i++){
+      aList[i].active_color="gray"
+    }
+    aList[index].active_color = aList[index].color
+    this.hasSelected = true
+    
+  }
 
+  restoreBoxes(){
+
+    var aList = this.accountList;
+      for(var i = 0; i<aList.length; i++){
+      aList[i].active_color = aList[i].color
+    }
+    this.hasSelected = false
+  }
+
+  hasSelected: boolean = false
 }

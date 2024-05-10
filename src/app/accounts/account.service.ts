@@ -10,6 +10,7 @@ export class AccountService {
       name: "Fixed Budget",
       balance: 500,
       color: 'green',
+      active_color: 'green',
       currency: 'USD',
       
     },    
@@ -17,12 +18,14 @@ export class AccountService {
       name: "Savings Budget",
       balance: 200,
       color: 'blue',
+      active_color: 'blue',
       currency: 'USD'
     },
     {
       name: "Expenses Budget",
       balance: 300,
       color: 'red',
+      active_color: 'red',
       currency: 'USD'
     }
   ]
